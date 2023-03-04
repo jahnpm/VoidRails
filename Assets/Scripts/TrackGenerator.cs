@@ -7,7 +7,6 @@ public class TrackGenerator : MonoBehaviour
     [SerializeField] GameObject RailPrefab;
     [SerializeField] Transform Track;
     [SerializeField] GameObject CarPrefab;
-    [SerializeField] GameObject XROrigin;
 
     RailProperties lastRail;
 
@@ -28,7 +27,6 @@ public class TrackGenerator : MonoBehaviour
             {
                 car = Instantiate(CarPrefab).GetComponent<CarController>();
                 car.currentRail = newRail;
-                car.XROrigin = XROrigin;
             }
         }
     }

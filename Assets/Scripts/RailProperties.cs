@@ -37,8 +37,8 @@ public class RailProperties : MonoBehaviour
         {
             curved = false;
 
-            //if (roll == 0)
-                //transform.rotation = Quaternion.AngleAxis(Random.Range(-45f, 45f), transform.right) * transform.rotation;
+            if (roll == 0)
+                transform.rotation = Quaternion.AngleAxis(Random.Range(-45f, 45f), transform.right) * transform.rotation;
         }
         else
             curved = true;
